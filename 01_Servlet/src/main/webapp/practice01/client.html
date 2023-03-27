@@ -6,7 +6,7 @@
 <script src="../resources/js/lib/jquery-3.6.4.min.js"></script>
 <script>
 	
-	$(()=>{
+	$(function(){
 		
 		// submit 이벤트 (이벤트 대상 = <form>)
 		$('#frm_join').on('submit', function(event){
@@ -16,20 +16,19 @@
 				alert('아이디는 필수입니다.');
 				$('#id').focus();
 				event.preventDefault();  // submit 방지
-				return;					 // 이벤트 리스너(함수) 종료
+				return;                  // 이벤트 리스너(함수) 종료
 			}
 			
 			// 비밀번호 입력 체크
 			else if($('#pw').val() == '' || $('#pw').val() != $('#pw2').val()){
-				alert('비밀번호를 확인하세요.')
-				$('#pw').focus();
-				event.preventDefault();
-				return;
+				alert('비밀번호를 확인하세요.');
+				event.preventDefault();  // submit 방지
+				return;                  // 이벤트 리스너(함수) 종료
 			}
+			
 		});
 		
 	});
-	
 	
 </script>
 </head>

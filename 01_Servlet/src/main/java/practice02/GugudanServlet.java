@@ -1,4 +1,4 @@
-package practice2;
+package practice02;
 
 import java.io.IOException;
 import java.io.PrintWriter;
