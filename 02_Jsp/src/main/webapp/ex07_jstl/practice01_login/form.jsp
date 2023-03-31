@@ -28,7 +28,7 @@
 			</div>
 		</c:otherwise>
 	</c:choose>
-	
+
 	<script>
 		$('#btn_logout').on('click', function(){
 			location.href = '${contextPath}/ex07_jstl/practice01/logout.jsp';
