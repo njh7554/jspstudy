@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,7 +14,6 @@ import service.BoardDetailService;
 import service.BoardListService;
 import service.BoardModifyService;
 import service.BoardRemoveService;
-import service.BoardWriteService;
 import service.IBoardService;
 
 @WebServlet("*.do")  // getAllBoardList.do  getBoardByNo.do writeBoard.do addBoard.do  modifyBoard.do  removeBoard.do
@@ -73,7 +73,6 @@ public class BoardController extends HttpServlet {
 				request.getRequestDispatcher(af.getPath()).forward(request, response);
 			}
 		}
-		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

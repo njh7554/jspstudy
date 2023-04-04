@@ -1,6 +1,7 @@
 package ex06_el;
 
 public class Book {
+	
 	private String author;
 	private String title;
 	private int price;
